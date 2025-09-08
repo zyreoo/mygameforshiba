@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgcfr3qk3waah"]
+[gd_scene load_steps=6 format=3 uid="uid://cgcfr3qk3waah"]
 
 [ext_resource type="PackedScene" uid="uid://cdrjn57u60kjh" path="res://3d/level/playground.glb" id="1_852og"]
 [ext_resource type="Script" uid="uid://71hb2umvksc2" path="res://scripts/Mannequin.gd" id="2_r3fl7"]
 [ext_resource type="PackedScene" uid="uid://dgf48pqadqrm4" path="res://3d/mannequiny/mannequiny-0.3.0.glb" id="2_uk32t"]
 [ext_resource type="Script" uid="uid://vqnpx8ofbtjy" path="res://scripts/Playground.gd" id="4_jka67"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r3fl7"]
+size = Vector3(24.8244, 1.9209, 29.6745)
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.391556, -0.183057, -1.02471)
@@ -11,19 +14,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.391556, -0.183057, -1.0247
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.0671281, -0.71747, 0.693347, -0.0691403, 0.696589, 0.714131, -0.995346, -3.469e-09, -0.0963669, 7.70105, 12.9564, -0.800259)
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.44091, 2.88876, -2.92126)
+[node name="playground" parent="." instance=ExtResource("1_852og")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.177382, 0, 0.463039)
+script = ExtResource("4_jka67")
 
-[node name="mannequiny-0_3_0" parent="CharacterBody3D" instance=ExtResource("2_uk32t")]
+[node name="StaticBody3D" type="StaticBody3D" parent="playground"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="playground/StaticBody3D"]
+transform = Transform3D(0.999738, -0.0228793, 0, 0.0228793, 0.999738, 0, 0, 0, 1, -6.45215, 1.12309, 1.79528)
+shape = SubResource("BoxShape3D_r3fl7")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 5.96046e-08, 0, -2.98023e-08, 1, 0, 7.45058e-09, 0, 1, 4.44091, 2.88876, -2.92126)
 script = ExtResource("2_r3fl7")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/mannequiny-0_3_0"]
-transform = Transform3D(-0.998889, 0.0223541, -0.0414885, 0.0058927, 0.932681, 0.360655, 0.0467577, 0.36001, -0.931776, 0.0532002, 1.64705, -1.24829)
+[node name="mannequiny-0_3_0" parent="CharacterBody3D" instance=ExtResource("2_uk32t")]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(-0.998889, 0.022354, -0.0414886, 0.0058927, 0.932681, 0.360655, 0.0467577, 0.36001, -0.931776, 0.0531993, 1.64705, -1.24829)
 fov = 69.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83339, -0.275378)
-
-[node name="playground" parent="." instance=ExtResource("1_852og")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.177382, 0, 0.463039)
-script = ExtResource("4_jka67")
