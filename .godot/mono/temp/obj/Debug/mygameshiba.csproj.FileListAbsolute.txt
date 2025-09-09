@@ -1,0 +1,17 @@
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/bin/Debug/mygameshiba.deps.json
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/bin/Debug/mygameshiba.runtimeconfig.json
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/bin/Debug/mygameshiba.dll
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/bin/Debug/mygameshiba.pdb
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygameshiba.csproj.AssemblyReference.cache
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygameshiba.GeneratedMSBuildEditorConfig.editorconfig
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygameshiba.AssemblyInfoInputs.cache
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygameshiba.AssemblyInfo.cs
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygameshiba.csproj.CoreCompileInputs.cache
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygamesh.3FDF94E3.Up2Date
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygameshiba.dll
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/refint/mygameshiba.dll
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygameshiba.pdb
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/mygameshiba.genruntimeconfig.cache
+/Users/simonemarton/Desktop/shiba/mygameshiba/.godot/mono/temp/obj/Debug/ref/mygameshiba.dll

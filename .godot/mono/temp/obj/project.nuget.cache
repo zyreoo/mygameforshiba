@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "M0ixY9TnDpk=",
+  "success": true,
+  "projectFilePath": "/Users/simonemarton/Desktop/shiba/mygameshiba/mygameshiba.csproj",
+  "expectedPackageFiles": [
+    "/Users/simonemarton/.nuget/packages/godot.sourcegenerators/4.4.1/godot.sourcegenerators.4.4.1.nupkg.sha512",
+    "/Users/simonemarton/.nuget/packages/godotsharp/4.4.1/godotsharp.4.4.1.nupkg.sha512",
+    "/Users/simonemarton/.nuget/packages/godotsharpeditor/4.4.1/godotsharpeditor.4.4.1.nupkg.sha512",
+    "/Users/simonemarton/.nuget/packages/microsoft.netcore.app.ref/8.0.19/microsoft.netcore.app.ref.8.0.19.nupkg.sha512",
+    "/Users/simonemarton/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.19/microsoft.aspnetcore.app.ref.8.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}
