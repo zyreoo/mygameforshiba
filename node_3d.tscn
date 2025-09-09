@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cgcfr3qk3waah"]
+[gd_scene load_steps=7 format=3 uid="uid://cgcfr3qk3waah"]
 
 [ext_resource type="PackedScene" uid="uid://cdrjn57u60kjh" path="res://3d/level/playground.glb" id="1_852og"]
 [ext_resource type="Script" uid="uid://71hb2umvksc2" path="res://scripts/Mannequin.gd" id="2_r3fl7"]
@@ -7,6 +7,10 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r3fl7"]
 size = Vector3(24.8244, 1.9209, 29.6745)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_r3fl7"]
+height = 1.74805
+radius = 0.518066
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.391556, -0.183057, -1.02471)
@@ -25,7 +29,7 @@ transform = Transform3D(0.999738, -0.0228793, 0, 0.0228793, 0.999738, 0, 0, 0, 1
 shape = SubResource("BoxShape3D_r3fl7")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 5.96046e-08, 0, -2.98023e-08, 1, 0, 7.45058e-09, 0, 1, 4.44091, 2.88876, -2.92126)
+transform = Transform3D(-0.998105, -5.94916e-08, -0.0615364, -2.98023e-08, 1, 0, 0.0615364, 3.66785e-09, -0.998105, 4.44091, 2.88876, -2.92126)
 script = ExtResource("2_r3fl7")
 
 [node name="mannequiny-0_3_0" parent="CharacterBody3D" instance=ExtResource("2_uk32t")]
@@ -35,4 +39,5 @@ transform = Transform3D(-0.998889, 0.022354, -0.0414886, 0.0058927, 0.932681, 0.
 fov = 69.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83339, -0.275378)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.959367, 0.315976)
+shape = SubResource("CylinderShape3D_r3fl7")
