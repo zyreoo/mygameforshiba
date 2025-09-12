@@ -1,12 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://cgcfr3qk3waah"]
+[gd_scene load_steps=8 format=3 uid="uid://cgcfr3qk3waah"]
 
 [ext_resource type="PackedScene" uid="uid://cdrjn57u60kjh" path="res://3d/level/playground.glb" id="1_852og"]
 [ext_resource type="Script" uid="uid://71hb2umvksc2" path="res://scripts/Mannequin.gd" id="2_r3fl7"]
 [ext_resource type="PackedScene" uid="uid://dgf48pqadqrm4" path="res://3d/mannequiny/mannequiny-0.3.0.glb" id="2_uk32t"]
 [ext_resource type="Script" uid="uid://vqnpx8ofbtjy" path="res://scripts/Playground.gd" id="4_jka67"]
+[ext_resource type="PackedScene" uid="uid://c6ufw3x8cy415" path="res://House.fbx" id="5_jka67"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r3fl7"]
-size = Vector3(24.8244, 1.9209, 29.6745)
+size = Vector3(5.03125, 13.2441, 28.7461)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_r3fl7"]
 height = 1.74805
@@ -16,16 +17,17 @@ radius = 0.518066
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.391556, -0.183057, -1.02471)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.0671281, -0.71747, 0.693347, -0.0691403, 0.696589, 0.714131, -0.995346, -3.469e-09, -0.0963669, 7.70105, 12.9564, -0.800259)
+transform = Transform3D(-0.210122, -0.921124, 0.327688, -0.0901991, 0.352005, 0.931642, -0.973505, 0.166201, -0.157049, 5.99771, 6.78403, -7.62588)
 
 [node name="playground" parent="." instance=ExtResource("1_852og")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.177382, 0, 0.463039)
 script = ExtResource("4_jka67")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="playground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.89509, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="playground/StaticBody3D"]
-transform = Transform3D(0.999738, -0.0228793, 0, 0.0228793, 0.999738, 0, 0, 0, 1, -6.45215, 1.12309, 1.79528)
+transform = Transform3D(-0.012217, 0.999925, 0, -0.999925, -0.012217, 0, 0, 0, 1, 0.773024, -2.40528, -1.36743)
 shape = SubResource("BoxShape3D_r3fl7")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
@@ -41,3 +43,6 @@ fov = 69.0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.959367, 0.315976)
 shape = SubResource("CylinderShape3D_r3fl7")
+
+[node name="House" parent="." instance=ExtResource("5_jka67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.38932, 3.27306, 3.78731)
