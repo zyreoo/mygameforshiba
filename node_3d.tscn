@@ -37,8 +37,7 @@ script = ExtResource("2_r3fl7")
 [node name="mannequiny-0_3_0" parent="CharacterBody3D" instance=ExtResource("2_uk32t")]
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(-0.998889, 0.022354, -0.0414886, 0.0058927, 0.932681, 0.360655, 0.0467577, 0.36001, -0.931776, 0.0531993, 1.64705, -1.24829)
-fov = 69.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.959367, 0.315976)
